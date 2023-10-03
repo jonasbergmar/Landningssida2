@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+.logo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 10px 20px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px 20px;
+
+  height: 120px;
+  background-color: rgb(139, 139, 139);
+  z-index: 1;
+}
+
+.navbar {
+  font-size: 20px;
+}
+
+.ctaHeader {
+  border: 1px thin black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: darkgray;
+  text-decoration: none;
+  color: black;
+}
+
+.ctaHeader:hover {
+  background-color: lightgray;
+}
+
+.links,
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  margin-left: 10px;
+  position: relative; /* Add this to create a positioning context for ::after */
+}
+
+.links::after {
+  content: "";
+  display: block;
+  height: 2px; /* Set the height to match the thickness of the underline */
+  width: 100%; /* Make the underline span the entire width of the link */
+  background: black;
+  position: absolute; /* Position the underline relative to the link */
+  bottom: 0; /* Position the underline at the bottom of the link */
+  left: 0; /* Align the underline with the link's left edge */
+  transform: scaleX(
+    0
+  ); /* Initially set the width to 0, then scale it when hovering */
+  transform-origin: center; /* Set the transform origin to the left edge of the underline */
+  transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+
+.links:hover::after {
+  transform: scaleX(1); /* Scale the width to 100% on hover */
+}
+
+.heroContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-color: white;
+  padding: 10%;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  padding: 10px;
+}
+
+.hero h2 {
+  padding: 10px 0px 10px 0px;
+}
+
+.ctaHeader2 {
+  border: 1px thin black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: darkgrey;
+  text-decoration: none;
+  color: black;
+}
+
+.ctaHeader2:hover {
+  background-color: lightgray;
+}
+
+.heroCta {
+  display: flex;
+  height: 50px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 10%;
+}
+
+.infoContainer,
+h1,
+h2,
+p {
+  padding: 10px;
+  text-align: center;
+}
+
+.textInfo {
+  width: 400px;
+}
+
+.infoBild {
+  height: auto;
+  width: 400px;
+  padding: 10px;
+}
+
+.studentContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  background-color: white;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.bilder {
+  width: 250px;
+}
+
+.text1 {
+  width: 30%;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.footerBild {
+  width: 30%;
+  position: absolute;
+  left: 0;
+}
+
+.länkar {
+  margin: 0% 10%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.länkar h2 {
+  text-align: left;
+}
+
+.adress p {
+  align-items: baseline;
+  text-align: left;
+}
+
+.adress h2 {
+  align-items: baseline;
+  text-align: left;
+}
+
+.adress a {
+  align-items: baseline;
+  text-align: left;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-color: white;
+  padding: 10%;
+}
+
+.hero2 {
+  text-align: center;
+}
+
+.hero2 h1 {
+  padding: 10px;
+}
+
+.hero2 h2 {
+  padding: 10px 0px 10px 0px;
+}
+
+.ctaHeader3 {
+  border: 1px thin black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: darkgrey;
+  text-decoration: none;
+  color: black;
+}
+
+.ctaHeader3:hover {
+  background-color: lightgray;
+}
+
+.heroCta2 {
+  margin: 10%;
+}
